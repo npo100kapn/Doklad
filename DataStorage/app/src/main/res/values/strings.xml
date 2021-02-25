@@ -1,0 +1,12 @@
+﻿<resources>
+    <string name="app_name">DataStorage</string>
+    <string name="text">Введите текст</string>
+    <string name="file">в файл</string>
+    <string name="openfile">Открыть</string>
+    <string name="bd">в БД</string>
+    <string name="openbd">Открыть</string>
+    <string name="sd">на SD</string>
+    <string name="saveperem">в variables</string>
+    <string name="loadperem">Открыть</string>
+    <string name="id">keyIdButton</string>
+</resources>
