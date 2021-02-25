@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:columnCount="2"
+    android:orientation="horizontal">
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill">
+        <EditText
+            android:id="@+id/editTextEnter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:autofillHints="@string/text"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:textColorHighlight="@color/teal_700"
+            android:textColorLink="@color/teal_700"
+            android:textSize="24sp" />
+        <ImageButton
+            android:id="@+id/idDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_alignRight="@id/editTextEnter"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_dialog_close_light"
+            android:onClick="buttonClear"
+            android:scaleType="center"
+            android:layout_alignEnd="@id/editTextEnter" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/button"
+        android:layout_gravity="fill"
+        android:background="@drawable/button_oval"
+        android:drawableLeft="@drawable/save"
+        android:onClick="SaveFile"
+        android:text="@string/file"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_gravity="fill"
+        android:background="@drawable/button_oval"
+        android:drawableLeft="@drawable/folderopen"
+        android:onClick="OpenClick"
+        android:layout_margin="5dp"
+        android:text="@string/openfile" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_gravity="fill"
+        android:layout_margin="5dp"
+        android:background="@drawable/button_oval"
+        android:drawableLeft="@drawable/databaseplus"
+        android:onClick="SaveInBD"
+        android:text="@string/bd" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_gravity="fill"
+        android:layout_margin="5dp"
+        android:background="@drawable/button_oval"
+        android:drawableLeft="@drawable/database"
+        android:onClick="OpenBD"
+        android:text="@string/openbd" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_gravity="fill"
+        android:background="@drawable/button_oval"
+        android:drawableLeft="@drawable/microsd"
+        android:onClick="writeFileSD"
+        android:layout_margin="5dp"
+        android:text="@string/sd" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_gravity="fill"
+        android:background="@drawable/button_oval"
+        android:drawableLeft="@drawable/openinapp"
+        android:onClick="readFileSD"
+        android:layout_margin="5dp"
+        android:text="@string/openfile" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_gravity="fill"
+        android:layout_margin="5dp"
+        android:background="@drawable/button_oval"
+        android:drawableLeft="@drawable/content"
+        android:onClick="SaveInPref"
+        android:text="@string/saveperem" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_gravity="fill"
+        android:layout_margin="5dp"
+        android:background="@drawable/button_oval"
+        android:drawableLeft="@drawable/openmultiple"
+        android:onClick="LoadPref"
+        android:text="@string/loadperem" />
+
+</GridLayout>
