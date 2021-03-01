@@ -1,0 +1,1 @@
+function t232_expandtext(recid){$("#rec"+recid).find(".t232__text").toggle()}
